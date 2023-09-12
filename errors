@@ -2,3 +2,21 @@ arm-linux-gnueabihf-gcc: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.34' n
 Cannot use CONFIG_CC_STACKPROTECTOR_STRONG: -fstack-protector-strong not supported by compiler
 Makefile:1122: recipe for target 'prepare-compiler-check' failed
 https://www.beagleboard.org/blog/2022-06-06-using-the-u-boot-extension-board-manager-beaglebone-boards-example
+
+
+#include<stdio.h>
+#include<signal.h>
+void sig_handler(int sig_num)
+{
+        printf("I am in signal handler for signal 1");
+
+ 
+
+}
+void main()
+{
+        int pid=getpid();
+        printf("pid of the process= %d\n",pid);
+        signal(1,sig_handler);
+        while(1);
+}
