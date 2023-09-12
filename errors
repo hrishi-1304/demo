@@ -1,3 +1,4 @@
 arm-linux-gnueabihf-gcc: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.34' not found (required by arm-linux-gnueabihf-gcc)
 Cannot use CONFIG_CC_STACKPROTECTOR_STRONG: -fstack-protector-strong not supported by compiler
 Makefile:1122: recipe for target 'prepare-compiler-check' failed
+https://www.beagleboard.org/blog/2022-06-06-using-the-u-boot-extension-board-manager-beaglebone-boards-example
