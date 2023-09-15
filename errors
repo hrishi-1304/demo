@@ -19,3 +19,5 @@ scripts/kconfig/conf  --syncconfig Kconfig
 *
 * Configure standard kernel features (expert users)
 *
+https://releases.linaro.org/components/toolchain/binaries/7.5-2019.12/arm-linux-gnueabihf/
+
